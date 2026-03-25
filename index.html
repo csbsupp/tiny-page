@@ -2,38 +2,55 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>ChatGPT Einstieg</title>
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      padding: 40px;
-      background: #f5f5f5;
-    }
-    h1 { font-size: 28px; }
-    p { font-size: 18px; }
-    button {
-      padding: 15px 25px;
-      font-size: 18px;
-      background: #007acc;
-      color: white;
-      border: none;
-      border-radius: 8px;
-    }
-  </style>
+  <title>Prompt Journeys</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-900">
 
-  <h1>ChatGPT ausprobieren</h1>
-  <p>In 2 Minuten zu deinem ersten Ergebnis</p>
+  <div class="max-w-5xl mx-auto p-8">
 
-  <button onclick="start()">Jetzt starten</button>
+    <h1 class="text-3xl font-bold mb-4">
+      Prompt-Journeys
+    </h1>
 
-  <script>
-    function start() {
-      window.location.href = "https://chatgpt.com/?prompt=DEIN_PROMPT";
-    }
-  </script>
+    <p class="text-lg text-slate-600 mb-8">
+      Schritt für Schritt zu einem konkreten Ergebnis – ohne Vorwissen.
+    </p>
+
+    <div class="bg-white p-6 rounded-xl shadow mb-8">
+      <h2 class="text-xl font-semibold mb-2">So funktioniert es</h2>
+      <p class="text-slate-600">
+        Eine Prompt-Journey führt dich Schritt für Schritt durch eine Aufgabe.
+        Du beantwortest einfache Fragen – und erhältst am Ende ein fertiges Ergebnis.
+      </p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-lg">Sanfter Einstieg</h3>
+        <p class="text-sm text-slate-500 mt-2">
+          Perfekt für Einsteiger ohne KI-Erfahrung
+        </p>
+        <button class="mt-4 bg-black text-white px-4 py-2 rounded">
+          Starten
+        </button>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-lg">KVP-Scout</h3>
+        <p class="text-sm text-slate-500 mt-2">
+          Prozesse verbessern und Probleme erkennen
+        </p>
+        <button class="mt-4 bg-black text-white px-4 py-2 rounded">
+          Starten
+        </button>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>
