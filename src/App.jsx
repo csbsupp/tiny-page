@@ -19,7 +19,12 @@ export default function App() {
             </div>
 
           </div>
-          <div className="grid gap-6 md:grid-cols-3 mt-12">
+          <div className="grid gap-6 md:grid-cols-4 mt-12">
+            <img
+                  src={`${import.meta.env.BASE_URL}video/manual.gif`}
+                  className="w-full rounded-2xl shadow"
+                />
+
             {steps.map((item) => (
               <div key={item.step} className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
                 <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-sm font-semibold text-white">
@@ -30,7 +35,8 @@ export default function App() {
               </div>
             ))}
           </div>
-                          <div className="mt-8 flex flex-wrap gap-3">
+                                
+              <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href="#journeys"
                   className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:scale-[1.01]"
@@ -39,13 +45,18 @@ export default function App() {
                 </a>
 
               </div>
+
         </div>
+
       </header>
 
       <main className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
 
 
-        <section id="journeys">
+        <section id="journeys"><div className="mb-8 rounded-2xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-900">
+          <strong>Hinweis:</strong> QR-Codes funktionieren je nach Gerät nicht immer zuverlässig.
+          Falls sich nichts öffnet, verwenden Sie bitte den Button direkt unter der jeweiligen Journey.
+        </div>
           <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Übersicht</p>
