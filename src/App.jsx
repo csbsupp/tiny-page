@@ -60,7 +60,7 @@ export default function App() {
           <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Übersicht</p>
-              <h2 className="mt-2 text-3xl font-semibold tracking-tight">HUG QuickWins - Unsere Prompt-Journeys</h2>
+              <h2 className="mt-2 text-3xl font-semibold tracking-tight">HUG QuickWins</h2>
               <p className="mt-4 max-w-3xl text-lg text-slate-600">
                 Wähle eine Journey aus und starte direkt.
               </p>
